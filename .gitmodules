@@ -1,6 +1,3 @@
-[submodule "Code"]
-	path = Code
-	url = https://github.com/createdbyx/VectorGrid-Code-Only.git
 [submodule "VectorGrid UnityProject/Assets/Codefarts/VectorGrid/Code"]
 	path = VectorGrid UnityProject/Assets/Codefarts/VectorGrid/Code
 	url = https://github.com/createdbyx/VectorGrid-Code-Only.git
