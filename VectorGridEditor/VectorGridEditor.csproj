@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{648381E1-F852-483E-8BF4-354DAC955BCC}</ProjectGuid>
+    <ProjectGuid>{8AC1D204-2B28-4CA5-94F2-B59AB1AD7764}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Codefarts.VectorGrid</RootNamespace>
-    <AssemblyName>Codefarts.VectorGrid</AssemblyName>
+    <RootNamespace>Codefarts.VectorGridEditor</RootNamespace>
+    <AssemblyName>Codefarts.VectorGridEditor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -18,10 +18,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;UNITY_5_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Codefarts.VectorGrid.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\Codefarts.VectorGridEditor.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -38,45 +38,27 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\Code Projects\Codefarts.UIControls\Codefarts.CodeBuilding.UnityLegacyUIProcessors\bin\Debug\UnityEditor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.0f2\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Code\CellSelectedArgs.cs">
-      <Link>CellSelectedArgs.cs</Link>
+    <Compile Include="..\Code\Editor\GuidesEditor.cs">
+      <Link>GuidesEditor.cs</Link>
     </Compile>
-    <Compile Include="..\Code\Guides.cs">
-      <Link>Guides.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\GuideTester.cs">
-      <Link>GuideTester.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\GuideVectorGridSync.cs">
-      <Link>GuideVectorGridSync.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\Helpers Unity5x.cs">
-      <Link>Helpers Unity5x.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\Helpers UnityOld.cs">
-      <Link>Helpers UnityOld.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\PerformanceConstants.cs">
-      <Link>PerformanceConstants.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\Point2D.cs">
-      <Link>Point2D.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\VectorGrid.cs">
-      <Link>VectorGrid.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\VectorGridSelections.cs">
-      <Link>VectorGridSelections.cs</Link>
-    </Compile>
-    <Compile Include="..\Code\VectorGridSelectionsSync.cs">
-      <Link>VectorGridSelectionsSync.cs</Link>
+    <Compile Include="..\Code\Editor\VectorGridEditor.cs">
+      <Link>VectorGridEditor.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VectorGrid\VectorGrid.csproj">
+      <Project>{648381e1-f852-483e-8bf4-354dac955bcc}</Project>
+      <Name>VectorGrid</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

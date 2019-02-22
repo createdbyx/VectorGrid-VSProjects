@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F99F74A2-B45E-A9D6-CBC5-1D62CA9FFEF2}</ProjectGuid>
+    <ProjectGuid>{494F7D3F-70C6-51B1-5091-FFDEAAB712F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,33 +61,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codefarts\VectorGrid\Code\CellSelectedArgs.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\Guides Unity5x.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\Guides UnityOld.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\Guides.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\GuideTester.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\GuideVectorGridSync.cs" />
+    <Compile Include="Assets\Codefarts\VectorGrid\Code\Helpers Unity5x.cs" />
+    <Compile Include="Assets\Codefarts\VectorGrid\Code\Helpers UnityOld.cs" />
+    <Compile Include="Assets\Codefarts\VectorGrid\Code\PerformanceConstants.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\Point2D.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGrid Unity5x.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGrid UnityOld.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGrid.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGridSelections Unity5x.cs" />
-    <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGridSelections UnityOld.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGridSelections.cs" />
     <Compile Include="Assets\Codefarts\VectorGrid\Code\VectorGridSelectionsSync.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>U:/EditorTools/VectorGrid/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>U:/EditorTools/VectorGrid/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>U:/EditorTools/VectorGrid/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>U:/EditorTools/VectorGrid/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>U:/EditorTools/VectorGrid/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -291,19 +288,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>U:/EditorTools/VectorGrid/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>U:/EditorTools/VectorGrid/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>U:/EditorTools/VectorGrid/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>U:/EditorTools/VectorGrid/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>U:/EditorTools/VectorGrid/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>P:/Repositories/Codefarts.VectorGrid/VSProjects/VectorGrid UnityProject/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
