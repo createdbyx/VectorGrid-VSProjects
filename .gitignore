@@ -5,3 +5,6 @@ VectorGrid/obj/
 VectorGrid/bin/
 VectorGrid UnityProject/obj/
 VectorGrid UnityProject/codealike.json
+VectorGrid UnityProject/Temp/
+VectorGridEditor/bin/
+VectorGridEditor/obj/
